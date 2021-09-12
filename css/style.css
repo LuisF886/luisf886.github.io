@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@media (max-width:720px) {
+    .banner-links{
+        height: auto;
+        flex-direction: column;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +14,8 @@
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
 }
+
+
 body {
     position: relative;
 }
