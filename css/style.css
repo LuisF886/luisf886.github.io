@@ -13,8 +13,14 @@
     list-style: none;
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
-}
+    text-decoration: none;
+    outline: none;
 
+
+}
+.banner-links{
+    text-decoration: none;
+}
 
 body {
     position: relative;
@@ -40,7 +46,7 @@ body {
     color: seashell;
 }
 .banner-links ul li a:hover {
-    background: rgb(230, 230, 230);;
+    background: rgb(230, 230, 230);
     color: #414141;
 }
 
@@ -55,39 +61,58 @@ body {
 .banner-text h1,p,h6 {
     color: seashell;
     padding-bottom: 5px;
+
 }
 .banner-text p{
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom: 100px;
 }
+
 .banner-animation {
     position: relative;
     overflow: hidden;
     height: 70px;
     padding: center;
+    padding-bottom: 20px;
 }
 .banner-animation h3 {
     color: #00c3ff;
-    font-size: 3em;
-    margin-top: 10px;
+    font-size: 2.5em;
+    margin-top: 30px;
 }
 .banner-animation h3:nth-child(1){
-    animation: eusou-animation 7s infinite;
+    animation: eusou-animation 8s infinite;
 }
 @keyframes eusou-animation{
-    0%{margin-top: 0;}
-    25%{margin-top: -65px;}
-    50%{ margin-top: -130px;}
-    75%{margin-top: -200px;}
-    100%{margin-top: 0;}
+    0%{margin-top: -5px;}
+    25%{margin-top: -80px;}
+    50%{ margin-top: -160px;}
+    75%{margin-top: -240px;}
+    100%{margin-top: -5px;}
+    
 }
+/*end of page*/
+.end h5{
+    font-size: 11px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-align: center;
+}
+.end h6{
+    font-size: 7px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+
 
 
 
 /*banner star animation (no idea how it works... but its bonito(*do not open*)*/
 .banner{
     overflow: hidden;
-    padding-bottom: 300px;
+    padding-bottom: 10px;
     background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
 }
 #stars {
@@ -590,7 +615,7 @@ body {
 .content{
     position: relative;
     text-align: center;
-    padding-bottom: 2000px;
+    padding-bottom: 170px;
     margin: 20px 0px;
     background: rgb(255, 255, 255);
 }
@@ -609,8 +634,9 @@ body {
 .habilidades{
     background: rgb(16,22,30);
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
     margin: 20px;
+
 }
 .habilidades h1,h3{
     color: whitesmoke;
@@ -634,6 +660,11 @@ body {
     width: 100%;
     margin-bottom: 25px;
 }
+.himg h3{
+    font-size: 4em;
+    font-size: min(12%);
+    font-size: max(100%);
+}
 
 
 
@@ -641,9 +672,103 @@ body {
 /*IMG SLIDE*/
 
 .certificados {
-    padding: min(20px, 10%);
-    padding: max(40px, 16%);
+    padding: min(20px, 16%);
+    padding: max(20px, 16%);
+    padding-bottom: 5%;
+    padding-top: 5%;
 }
 .certificados h1 {
     padding-bottom: 20px;
 }
+
+
+
+
+/*contato*/
+.contato{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+}
+.contato_links a{
+    padding: 0px 10px;
+    color: #00c3ff;
+}
+.contato_links a:hover{
+    color: black;
+}
+.contato h1{
+    padding-top: 50px;
+}
+
+
+
+/*Cursos*/
+.cursos h1 {
+    padding-top: 40px;
+}
+.lista{
+    padding-top: 10px;
+    color: white;
+}
+/*rows*/
+.row{
+    padding-top: 30px;
+}
+.col div {
+    color: rgb(216, 216, 216);
+}
+
+
+
+
+/*experiencia*/
+.experiencia{
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+.experiencia h5{
+    color: rgb(216, 216, 216);
+}
+.experiencia a{
+    color: #00c3ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*ignore -vc n viu nada-*/
+#pdassobre{
+    padding-bottom: 0px;
+}
+#pdassobre2{
+    padding-top: 0;
+}
+/*ignore -vc n viu nada-*/
+
+
+
+
+
+
+
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    header {
+      background-image: url(./img/scott-web-1000-500.jpg);
+      background-size: cover;
+      min-height: 500px;
+      border-bottom: 2rem solid hsl(220deg, 50%, 70%);
+      justify-content: flex-end;
+      align-items: flex-end;
+    }}
