@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@media (max-width:720px) {
-    .banner-links{
-        height: auto;
-        flex-direction: column;
-    }
-}
+
 
 * {
     margin: 0;
@@ -18,36 +13,21 @@
 
 
 }
-.banner-links{
-    text-decoration: none;
-}
+
 
 body {
     position: relative;
 }
-.banner-links {
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-}
-.banner-links ul {
-    display: flex;
-}
-.banner-links ul li {
-    margin:  54 10px;
+.banner-links{
     text-transform: uppercase;
+    padding-bottom: 0;
+    text-align: center;
+    padding-top: 60px;
+    color: white;
 }
-.banner-links ul li a {
-    padding: 6px 10px;
-    border-radius: 17px;
-    color: seashell;
-}
-.banner-links ul li a:hover {
-    background: rgb(230, 230, 230);
-    color: #414141;
+.banner-links p {
+    color: rgb(184, 184, 184);
+    text-transform:initial;    
 }
 
 
@@ -55,8 +35,8 @@ body {
 /*text sliddeeee animation*/
 .banner-text{
     text-align: center;
-    padding-top: min(5%);
-    padding-top: max(15%);
+    padding-top: 0;
+    padding-top: max(10%);
 }
 .banner-text h1,p,h6 {
     color: seashell;
